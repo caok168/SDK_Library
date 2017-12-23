@@ -262,19 +262,19 @@ namespace MATHProcess
                 switch (condition2)
                 {
                     case "=":
-                        listResult = listResult.Where(s => s == value1).ToList();
+                        listResult = listResult.Where(s => s == value2).ToList();
                         break;
                     case "<":
-                        listResult = listResult.Where(s => s < value1).ToList();
+                        listResult = listResult.Where(s => s < value2).ToList();
                         break;
                     case "<=":
-                        listResult = listResult.Where(s => s <= value1).ToList();
+                        listResult = listResult.Where(s => s <= value2).ToList();
                         break;
                     case ">":
-                        listResult = listResult.Where(s => s > value1).ToList();
+                        listResult = listResult.Where(s => s > value2).ToList();
                         break;
                     case ">=":
-                        listResult = listResult.Where(s => s >= value1).ToList();
+                        listResult = listResult.Where(s => s >= value2).ToList();
                         break;
                     default:
                         break;
