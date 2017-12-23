@@ -36,6 +36,10 @@
     <AssemblyOriginatorKeyFile>EXCELProcess.Process.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NPOI, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\NPOI.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -50,6 +54,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="EXCELProcess.Process.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="libs\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="libs\NPOI.dll" />
+    <Content Include="libs\NPOI.OOXML.dll" />
+    <Content Include="libs\NPOI.OpenXml4Net.dll" />
+    <Content Include="libs\NPOI.OpenXmlFormats.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
